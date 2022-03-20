@@ -1,9 +1,4 @@
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Process {
@@ -11,31 +6,48 @@ public class Process {
     private static int paramIgnoreFirst, paramIgnoreLast;
     private static ArrayList<Integer> paramProject;
     private static String paramDelimiter, paramSeparator, paramSelect;
+    private static int errorCode = 2;
 
-    public static List<String> readLines() {
-        Scanner scanner = new Scanner(System.in);
-        List<String> lines = new ArrayList<>();
-        String line;
-        while (scanner.hasNextLine() && !((line = scanner.nextLine()).equals(""))) {
-            lines.add(line);
+
+    public static void main(String[] args) {
+        paramProject = new ArrayList<>();
+        getParams(args);
+        ArrayList<String> lines = readLines();
+
+        if (lines.size() == 0) {
+            System.exit(errorCode);
         }
-        return lines;
+        errorCode = 1;
+
+        ArrayList<String> newLiens = new ArrayList<>(lines.size());
+        for (String s : lines) {
+            s = ignoreFirstLast(s);
+            if (!paramDelimiter.equals(""))
+                s = delimiter(s);
+            if (!paramSeparator.equals(""))
+                s = separator(s);
+            newLiens.add(s);
+        }
+
+        lines = newLiens;
+
+        if (!paramProject.isEmpty())
+            project(lines);
+
+        select(lines);
+        System.exit(errorCode);
 
     }
 
-    public static void main(String[] args) {
-        getParams(args);
-        List<String> lines = readLines();
-        System.out.println(lines);
 
-        System.out.println(paramIgnoreFirst);
-        System.out.println(paramIgnoreLast);
-        System.out.println(paramSeparator);
-        System.out.println(paramDelimiter);
-        System.out.println(paramProject);
-        System.out.println(paramSelect);
+    public static ArrayList<String> readLines() {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> lines = new ArrayList<>();
 
-
+        while (scanner.hasNextLine() ) {
+            lines.add(scanner.nextLine());
+        }
+        return lines;
 
     }
 
@@ -54,7 +66,7 @@ public class Process {
                             case "--project" -> {
                                 paramProject = new ArrayList<>();
                                 String[] columns = split[1].split(",");
-                                for(String column: columns){
+                                for (String column : columns) {
                                     paramProject.add(Integer.valueOf(column));
                                 }
                             }
@@ -66,6 +78,52 @@ public class Process {
             }
 
 
+        }
+    }
+
+    private static String ignoreFirstLast(String s) {
+        if(paramIgnoreFirst+paramIgnoreLast>s.length())
+            return "";
+        return s.substring(paramIgnoreFirst, s.length() - paramIgnoreLast);
+    }
+
+    private static String delimiter(String s) {
+
+        return s.replace(paramDelimiter, "\t");
+    }
+
+    private static String separator(String s) {
+
+        return s.replace("\t", paramSeparator);
+    }
+
+    private static void project(ArrayList<String> strings) {
+
+        System.out.println("PROJECT");
+        for (String s : strings) {
+            String[] array = s.split(" ");
+            StringBuilder stringBuilder = new StringBuilder();
+            for (Integer i : paramProject) {
+
+                if (i <= array.length)
+                    stringBuilder.append(array[i-1]).append(" ");
+            }
+            if (!stringBuilder.toString().equals("")){
+                errorCode = 0;
+
+            }
+            System.out.println(stringBuilder);
+        }
+    }
+
+    private static void select(ArrayList<String> strings) {
+        System.out.println("SELECT");
+
+        for (String s : strings) {
+            if (s.contains(paramSelect)) {
+                errorCode = 0;
+                System.out.println(s);
+            }
         }
     }
 }
