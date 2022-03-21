@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JezykiS.iml" filepath="$PROJECT_DIR$/.idea/JezykiS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab1Ex1/lab1Ex1.iml" filepath="$PROJECT_DIR$/lab1Ex1/lab1Ex1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab1Ex2/lab1Ex2.iml" filepath="$PROJECT_DIR$/lab1Ex2/lab1Ex2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab1Ex3/lab1Ex3.iml" filepath="$PROJECT_DIR$/lab1Ex3/lab1Ex3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab1Ex4/lab1Ex4.iml" filepath="$PROJECT_DIR$/lab1Ex4/lab1Ex4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab2Ex1/lab2Ex1.iml" filepath="$PROJECT_DIR$/lab2Ex1/lab2Ex1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab2Ex2/lab2Ex2.iml" filepath="$PROJECT_DIR$/lab2Ex2/lab2Ex2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab2Ex3/lab2Ex3.iml" filepath="$PROJECT_DIR$/lab2Ex3/lab2Ex3.iml" />
+    </modules>
+  </component>
+</project>
