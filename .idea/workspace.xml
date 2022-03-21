@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8191437f-7f36-4fa7-86a9-50830f18ecc3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab2Ex2/src/Head.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2Ex2/src/text.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2Ex3/src/Tail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2Ex3/src/text.txt" afterDir="false" />
+    <list default="true" id="8191437f-7f36-4fa7-86a9-50830f18ecc3" name="Changes" comment="Ex2,3 lab2">
+      <change afterPath="$PROJECT_DIR$/lab2Ex5v2/save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -37,10 +38,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab2Ex1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab2Ex5v2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,8 +53,25 @@
       <option name="presentableId" value="Default" />
       <updated>1647607259009</updated>
       <workItem from="1647607260761" duration="32000" />
-      <workItem from="1647847644586" duration="4227000" />
+      <workItem from="1647847644586" duration="6356000" />
+      <workItem from="1647854061537" duration="125000" />
+      <workItem from="1647860120282" duration="59000" />
     </task>
+    <task id="LOCAL-00001" summary="Ex2,3 lab2">
+      <created>1647851896142</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647851896142</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ex2,3 lab2">
+      <created>1647852007106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647852007106</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +87,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ex2,3 lab2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ex2,3 lab2" />
   </component>
 </project>
