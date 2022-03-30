@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8191437f-7f36-4fa7-86a9-50830f18ecc3" name="Changes" comment="Ex2,3 lab2">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex1/src/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex1/src/Process.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex1/src/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex1/src/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex1/src/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex1/src/text.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex1/src/wyjscie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex1/src/wyjscie.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex2/src/Head.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex2/src/Head.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex2/src/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex2/src/Head.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex2/src/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex2/src/text.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex3/src/Tail.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex3/src/Tail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex3/src/Tail.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex3/src/Tail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex3/src/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex3/src/text.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex4/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex4/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2Ex1/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2Ex1/Process.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2Ex1/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2Ex1/text.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2Ex1/wyjscie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2Ex1/wyjscie.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2Ex2/Head.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2Ex2/Head.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2Ex2/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2Ex2/text.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2Ex3/Tail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2Ex3/Tail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2Ex3/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2Ex3/text.txt" afterDir="false" />
-    </list>
+    <list default="true" id="8191437f-7f36-4fa7-86a9-50830f18ecc3" name="Changes" comment="Ex1,2,3 lab2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +58,7 @@
       <workItem from="1647860120282" duration="59000" />
       <workItem from="1647878079500" duration="2055000" />
       <workItem from="1648571043961" duration="643000" />
-      <workItem from="1648632433985" duration="5515000" />
+      <workItem from="1648632433985" duration="5643000" />
     </task>
     <task id="LOCAL-00001" summary="Ex2,3 lab2">
       <created>1647851896142</created>
@@ -95,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647852007106</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ex1,2,3 lab2">
+      <created>1648638010021</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648638010022</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +101,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ex2,3 lab2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ex2,3 lab2" />
+    <MESSAGE value="Ex1,2,3 lab2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ex1,2,3 lab2" />
   </component>
 </project>

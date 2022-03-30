@@ -11,19 +11,19 @@ if len(sys.argv) > 1:
 
     dict_1 = {}
     f = open('f1.txt', 'w')
-    for a in array:
-        new_a = a.replace('-', '').split(" ")
-        if 1 < len(new_a):
+    for line in array:
+        new_line = line.replace('-', '').split(" ")
+        if 1 < len(new_line):
             try:
-                e = int(new_a[1])
-                dict_1[new_a[0]] = e
+                e = int(new_line[1])
+                dict_1[new_line[0]] = e
             except:
-                dict_1[new_a[0]] = 0
+                dict_1[new_line[0]] = 0
 
     sorted_dict = sorted(dict_1.items(), key=lambda item: int(item[1]), reverse=True)
 
-    for i in sorted_dict:
-        f.write('%s %s\n' % (i[0], i[1]))
+    for elem in sorted_dict:
+        f.write('%s %s\n' % (elem[0], elem[1]))
 
     f = open("f1.txt", "r")
     txt = Path('f1.txt').read_text()
@@ -31,21 +31,22 @@ if len(sys.argv) > 1:
 # ---------------------------------------------------------------------
 if len(sys.argv) > 2:
     extension = sys.argv[2]
+    txt = Path('f1.txt').read_text()
     output = subprocess.check_output(f"java Process --select={str(extension)}", shell=True, universal_newlines=True,
                                      text=True, input=txt)
 
     array = output.split('\n')
     dict_2 = {}
-    for a in array:
-        new_a = a.split(" ")
-        if 1 < len(new_a):
+    for line in array:
+        new_line = line.split(" ")
+        if 1 < len(new_line):
             try:
-                e = int(new_a[1])
-                dict_2[new_a[0]] = e
+                e = int(new_line[1])
+                dict_2[new_line[0]] = e
             except:
-                dict_2[new_a[0]] = 0
-    sum = 0
+                dict_2[new_line[0]] = 0
+    sum_of_dict = 0
     for val in dict_2.values():
-        sum += val
+        sum_of_dict += val
 
-    print("The average : " + str(sum / len(dict_2)))
+    print("The average : " + str(sum_of_dict / len(dict_2)))
