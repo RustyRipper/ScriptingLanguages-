@@ -5,7 +5,7 @@ public class Process {
 
     private static int paramIgnoreFirst, paramIgnoreLast;
     private static ArrayList<Integer> paramProject;
-    private static String paramDelimiter, paramSeparator, paramSelect;
+    private static String paramDelimiter=",", paramSeparator="", paramSelect="";
     private static int errorCode = 2;
 
 
@@ -34,7 +34,9 @@ public class Process {
         if (!paramProject.isEmpty())
             project(lines);
 
-        select(lines);
+
+        if(!paramSelect.equals(""))
+            select(lines);
         System.exit(errorCode);
 
     }
@@ -101,7 +103,7 @@ public class Process {
 
         System.out.println("PROJECT");
         for (String s : strings) {
-            String[] array = s.split(" ");
+            String[] array = s.split(String.format("[ \t%s]",paramSeparator));
             StringBuilder stringBuilder = new StringBuilder();
             for (Integer i : paramProject) {
 
@@ -110,7 +112,6 @@ public class Process {
             }
             if (!stringBuilder.toString().equals("")){
                 errorCode = 0;
-
             }
             System.out.println(stringBuilder);
         }
