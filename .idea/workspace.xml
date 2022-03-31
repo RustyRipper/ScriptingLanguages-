@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8191437f-7f36-4fa7-86a9-50830f18ecc3" name="Changes" comment="Ex1,2,3 lab2" />
+    <list default="true" id="8191437f-7f36-4fa7-86a9-50830f18ecc3" name="Changes" comment="Ex1,2,3 lab2">
+      <change afterPath="$PROJECT_DIR$/lab2Ex4/average.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2Ex4/biggest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2Ex1/src/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex1/src/Process.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2Ex3/src/text.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2Ex4/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex4/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +49,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -59,6 +66,8 @@
       <workItem from="1647878079500" duration="2055000" />
       <workItem from="1648571043961" duration="643000" />
       <workItem from="1648632433985" duration="5643000" />
+      <workItem from="1648653582291" duration="5981000" />
+      <workItem from="1648722507081" duration="194000" />
     </task>
     <task id="LOCAL-00001" summary="Ex2,3 lab2">
       <created>1647851896142</created>
@@ -103,5 +112,16 @@
     <MESSAGE value="Ex2,3 lab2" />
     <MESSAGE value="Ex1,2,3 lab2" />
     <option name="LAST_COMMIT_MESSAGE" value="Ex1,2,3 lab2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab2Ex1/src/Process.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

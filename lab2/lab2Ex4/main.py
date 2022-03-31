@@ -6,7 +6,6 @@ if len(sys.argv) > 1:
     n = sys.argv[1]
     output = subprocess.check_output("java Paths -R -s | java Process --project=1,3", shell=True,
                                      universal_newlines=True)
-
     array = output.split('\n')
 
     dict_1 = {}
@@ -39,7 +38,7 @@ if len(sys.argv) > 2:
     dict_2 = {}
     for line in array:
         new_line = line.split(" ")
-        if 1 < len(new_line):
+        if len(new_line) > 1:
             try:
                 e = int(new_line[1])
                 dict_2[new_line[0]] = e
