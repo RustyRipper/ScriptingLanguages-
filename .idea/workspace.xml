@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8191437f-7f36-4fa7-86a9-50830f18ecc3" name="Changes" comment="Ex1,2,3 lab2">
-      <change afterPath="$PROJECT_DIR$/lab2Ex4/average.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2Ex4/biggest.py" afterDir="false" />
+    <list default="true" id="8191437f-7f36-4fa7-86a9-50830f18ecc3" name="Changes" comment="Ex1 lab3">
+      <change afterPath="$PROJECT_DIR$/lab3/lab3Ex2/cases2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab3/lab3Ex2/chance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab3/lab3Ex2/deaths.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex1/src/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex1/src/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex3/src/text.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2Ex4/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2Ex4/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1Ex1/Paths.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1Ex2/PokazWszystkie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1Ex3/PokazPodobne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1Ex4/KodPowrotu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2Ex1/Process.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2Ex2/Head.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2Ex3/Tail.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +48,30 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab2Ex5v2" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab3/lab3Ex1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Aggregate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aggregate" />
+      <module name="lab3Ex1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Aggregate" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,6 +90,12 @@
       <workItem from="1648632433985" duration="5643000" />
       <workItem from="1648653582291" duration="5981000" />
       <workItem from="1648722507081" duration="194000" />
+      <workItem from="1648747296982" duration="6430000" />
+      <workItem from="1649009726123" duration="17000" />
+      <workItem from="1649009797376" duration="89000" />
+      <workItem from="1649009921195" duration="9000" />
+      <workItem from="1649092152007" duration="280000" />
+      <workItem from="1649092439658" duration="154000" />
     </task>
     <task id="LOCAL-00001" summary="Ex2,3 lab2">
       <created>1647851896142</created>
@@ -111,7 +139,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ex2,3 lab2" />
     <MESSAGE value="Ex1,2,3 lab2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ex1,2,3 lab2" />
+    <MESSAGE value="Ex1 lab3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ex1 lab3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
