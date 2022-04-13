@@ -10,7 +10,7 @@ class TextStats:
         self.__compute(text)
 
     def __compute(self, text):
-        self.number_of_lines = text.count('\n')
+        self.number_of_lines = text.count('\n') + 1
         self.number_of_words = len(re.findall(r"[\w']+", text))
         s = ''.join(ch for ch in text if ch.isalpha())
         self.number_of_nonalpha = len(text) - len(s) - 1

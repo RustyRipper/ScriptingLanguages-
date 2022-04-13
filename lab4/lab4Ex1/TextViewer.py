@@ -8,7 +8,6 @@ class TextViewer(FileViewer, TextBuffer):
     _stats: TextStats
 
     def __init__(self, path):
-
         FileViewer.__init__(self, path)
         TextBuffer.__init__(self, path)
         self._stats = TextStats(self.text)

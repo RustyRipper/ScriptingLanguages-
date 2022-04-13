@@ -10,15 +10,14 @@ class ViewerCreator:
         pass
 
     def create_viewer(self, path):
-        file_viewer: FileViewer
-        type_of_file = self.__detect_viewer_type(path)
-        if type_of_file.__contains__('text/'):
-            file_viewer = TextViewer(path)
-            return file_viewer
-        elif type_of_file.__contains__('image/'):
-            file_viewer = ImageViewer(path)
-            return file_viewer
+        instance: FileViewer = self.__detect_viewer_type(path)(path)
+        return instance
 
     @staticmethod
     def __detect_viewer_type(path):
-        return str(mt.MimeTypes().guess_type(path))
+        ext_of_file = mt.MimeTypes().guess_type(path)[0]
+        if ext_of_file.__contains__('text/'):
+            return TextViewer
+        elif ext_of_file.__contains__('image/'):
+            return ImageViewer
+
