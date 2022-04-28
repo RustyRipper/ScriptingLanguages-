@@ -18,8 +18,3 @@ class TextViewer(FileViewer, TextBuffer):
 
     def get_data(self):
         return self._stats
-
-
-
-
-

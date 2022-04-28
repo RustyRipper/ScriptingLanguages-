@@ -26,9 +26,9 @@ class Runtime:
         m_a = MultipleAccumulate(list_of_values, sum, mul, div)
 
         for duck in m_a, text:
+            print('kwa kwa')
             print(duck.get_data())
 
 
 if __name__ == '__main__':
     Runtime().main()
-
