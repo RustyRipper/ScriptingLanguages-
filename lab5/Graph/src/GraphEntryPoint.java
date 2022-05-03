@@ -2,18 +2,14 @@ import py4j.GatewayServer;
 
 
 public class GraphEntryPoint {
-    private static Graph graph;
 
-    public GraphEntryPoint() {
-        graph = new Graph();
 
-    }
-    public Graph getGraph(){
-        return graph;
+    public Graph getNewGraph(){
+        return new Graph();
     }
     public static void main(String[] args) {
 
-        GatewayServer server = new GatewayServer(new GraphEntryPoint(), 25333);
+        GatewayServer server = new GatewayServer(new GraphEntryPoint());
         server.start();
 
 

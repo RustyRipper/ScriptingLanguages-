@@ -11,9 +11,39 @@ public class Graph {
     public void addNode(String label) {
         connectedNodes.putIfAbsent(new Node(label), new ArrayList<>());
     }
-    public void setNodeLabel(String label){
-        if(connectedNodes.containsKey(new Node(label))){
 
+    public void modifyNodeLabel(String oldLabel, String newLabel) {
+
+        Node nodeToModify = new Node(oldLabel);
+        Node newNode = new Node(newLabel);
+
+        if (connectedNodes.containsKey(nodeToModify)) {
+
+            List<Edge> list = connectedNodes.remove(nodeToModify);
+
+            connectedNodes.put(newNode, list);
+            for (List<Edge> values : connectedNodes.values()) {
+
+                Edge edgeToModify = new Edge(nodeToModify, 0);
+
+                if (values.contains(edgeToModify)) {
+
+                    int index = values.indexOf(edgeToModify);
+                    values.set(index, new Edge(newNode, values.get(index).weight));
+                }
+            }
+        }
+    }
+
+    public void modifyWeightEdge(String sourceLabel, String destLabel, int newWeight){
+
+        Edge edgeToModify = new Edge(new Node(destLabel),0);
+        Node sourceNode = new Node(sourceLabel);
+
+        if(connectedNodes.get(sourceNode).contains(edgeToModify)){
+
+            int index = connectedNodes.get(sourceNode).indexOf(edgeToModify);
+            connectedNodes.get(sourceNode).set(index, new Edge(new Node(destLabel), newWeight));
         }
     }
 
@@ -30,7 +60,7 @@ public class Graph {
         addNode(label1);
         Node node2 = new Node(label2);
         addNode(label2);
-        if(!connectedNodes.get(node1).contains(new Edge(node2,0)))
+        if (!connectedNodes.get(node1).contains(new Edge(node2, 0)))
             connectedNodes.get(node1).add(new Edge(node2, weight));
     }
 
@@ -45,7 +75,7 @@ public class Graph {
 
     public ArrayList<String> DFS(String root) {
         ArrayList<String> visited = new ArrayList<>();
-        Stack<String> stack = new Stack<String>();
+        Stack<String> stack = new Stack<>();
         stack.push(root);
         while (!stack.isEmpty()) {
             String vertex = stack.pop();
@@ -66,7 +96,7 @@ public class Graph {
     public ArrayList<String> BFS(String root) {
 
         ArrayList<String> visited = new ArrayList<>();
-        Queue<String> queue = new LinkedList<String>();
+        Queue<String> queue = new LinkedList<>();
         queue.add(root);
         visited.add(root);
         while (!queue.isEmpty()) {
